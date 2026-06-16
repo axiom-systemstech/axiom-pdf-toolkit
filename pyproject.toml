@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axiom-pdf-toolkit"
+version = "1.0.0"
+description = "Manipulate PDFs from terminal - merge, split, compress, protect, extract text and images"
+authors = [
+    {name = "Manuel Echepares / AXIOM Systems", email = "axiom@systemstech.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PyPDF2>=3.0.0",
+    "pdf2image>=1.16.3",
+    "Pillow>=10.0.0",
+    "pypdf>=4.0.0"
+]
+
+[project.scripts]
+axiom-pdf = "axiom_pdf.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/axiom-systemstech/axiom-pdf-toolkit"
+Repository = "https://github.com/axiom-systemstech/axiom-pdf-toolkit"
